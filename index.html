@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            index
+        </title>
+        <script src="libs/angular/angular.min.js">
+        </script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="css/bootstrap-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/ionicons/css/ionicons.min.css" rel="stylesheet" />
+        <link href="css/__aio_components.css" rel="stylesheet" />
+        <script>
+                var require = {
+            urlArgs: window.navigator.userAgent.match(/Windows Phone/i) ? undefined : "bust=1533182335"
+        };
+        </script>
+        <script data-main="app/bootstrap" src="libs/requirejs/require.js">
+        </script>
+    </head>
+    
+    <body>
+        <div ng-controller="indexController" ng-cloak ng-init="init()">
+            <div ng-view class="">
+            </div>
+        </div>
+    </body>
+
+</html>

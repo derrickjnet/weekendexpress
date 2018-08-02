@@ -1,0 +1,14 @@
+<div ng-controller="Screen1" ng-cloak ng-init="init()">
+    <div ng-repeat="business in businessList" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                {{business.name}}
+            </h3>
+        </div>
+        <img ng-src="{{business.image}}" width="" height="50px" src="files/images/no-image.jpg"
+        class="img-default img-responsive" alt="Image error">
+        <div class="panel-footer">
+            {{business.phone}}
+        </div>
+    </div>
+</div>
